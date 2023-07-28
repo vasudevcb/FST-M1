@@ -1,0 +1,83 @@
+<!--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyFirstSuite">
+    <test thread-count="4" name="Test">
+        <classes>
+            <class name="TestNGPrograms.MyFirstTest">
+                <methods>
+                    <include name="verifyString1" />
+                    <include name="verifyVariableValue1" />
+                </methods>
+            </class>
+            <class name="TestNGPrograms.MyThirdTest">
+                <methods>
+                    <include name="verifyString3" />
+                    <include name="verifyVariableValue3" />
+                </methods>
+            </class>
+            <class name="TestNGPrograms.MySecondTest">
+                <methods>
+                    <include name="verifyString2" />
+                    <include name="verifyVariableValue2" />
+                </methods>
+            </class>
+        </classes>
+    </test> &lt;!&ndash; Test &ndash;&gt;
+</suite> &lt;!&ndash; Suite &ndash;&gt;
+
+====================
+Activity 5
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="Suite">
+    <test name="Test">
+    <groups>
+        <run>
+            <include name="HeaderTests" />
+            <!--<exclude name="HeaderTests" />
+        </run>
+        </groups>
+<classes>
+    <class name="session9.GroupsDemo"/>
+    <class name="session9.DemoOne"/>
+    <class name="session9.DemoTwo"/>
+    <class name="session9.Activity5"/>
+</classes>
+        </test> <!-- Test
+        </suite> <!-- Suite
+============================
+Activity 6
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="Suite">
+    <test name="Test">
+        <parameter name="username" value="admin"/>
+        <parameter name="password" value="password"/>
+        <classes>
+            <class name="session9.Activity6"/>
+        </classes>
+    </test> <!-- Test -
+        </suite> <!-- Suite -
+=======================
+Activity7
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="Suite">
+    <test name="Test">
+        <classes>
+            <class name="session9.Activity7"/>
+        </classes>
+    </test> <!-- Test --
+        </suite> <!-- Suite --
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ExampleSuite" >
+    <test name="SuiteTests" >
+        <classes>
+            <class name="activities.DemoOne"/>
+            <class name="activities.DemoTwo"/>
+        </classes>
+    </test>
+</suite>
